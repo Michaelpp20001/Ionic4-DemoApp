@@ -29,6 +29,7 @@
     "@ionic/angular": "^5.1.1",
     "@ionic/storage": "^2.2.0",
     "angular": "^1.8.0",
+    "angular-cli-ghpages": "^0.6.2",
     "cordova-android": "^8.1.0",
     "cordova-ios": "5.1.1",
     "cordova-plugin-advanced-http": "^2.3.0",

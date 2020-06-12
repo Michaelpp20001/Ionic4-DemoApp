@@ -100,6 +100,17 @@ export class PhotoServiceService {
       await alert.present();
     }
 
+    async presentAlertError() {
+      const alert = await this.alertController.create({
+        header: 'Not Available!',
+        subHeader: 'Download Ionic 4 Demo',
+        message: 'Download the app from Google Play Store for the full features!',
+        buttons: ['OK']
+      });
+  
+      await alert.present();
+    }
+
     addPhoto(imageData) {
     // Add new photo to gallery
       this.photos.unshift({
@@ -122,6 +133,7 @@ export class PhotoServiceService {
           this.set();
         }, (err) => {
           console.log("Camera issue:" + err);
+          this.presentAlertError();
         });
     }
 

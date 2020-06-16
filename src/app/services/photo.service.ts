@@ -102,9 +102,9 @@ export class PhotoServiceService {
 
     async presentAlertError() {
       const alert = await this.alertController.create({
-        header: 'Not Available!',
-        subHeader: 'Download Ionic 4 Demo',
-        message: 'Download the app from Google Play Store for the full features!',
+        header: 'Cordova Not Available!',
+        subHeader: 'Download Ionic 4 Demo for the full features',
+        message: "<a href='https://play.google.com/store/apps/details?id=io.ionic.ionicDemo&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='./assets/google-play-badge-IonicDemo.png'/></a>",
         buttons: ['OK']
       });
   
